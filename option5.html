@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoga for Busy People</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-[#402021] font-sans bg-[#E1D4C8]">
+
+  <!-- Hero Section -->
+  <section class="bg-[#402021] text-white">
+    <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Left Content -->
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          <span class="text-[#EE542F]">Feel Like You're Always On?</span><br>
+          It’s Time to Switch Off – Naturally.
+        </h1>
+        <p class="mt-6 text-lg text-[#E1D4C8]">
+          Yoga for Busy People: Reset Your Mind and Body in Just 20 Minutes a Day.
+        </p>
+
+        <!-- CTA Button -->
+        <button class="openFormBtn mt-6 px-8 py-4 bg-[#EE542F] text-white font-semibold rounded-lg shadow hover:bg-[#c94323]">
+          Book your Free Session
+        </button>
+
+        <p class="mt-4 text-sm text-[#DCC7B6]">
+          Get a personalized consultation – even if you’ve never done yoga before.
+        </p>
+      </div>
+
+      <!-- Right Image -->
+      <div class="hidden md:block">
+        <img src="images/hero1.jpg" alt="Yoga" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup -->
+  <div id="popupForm" class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+    <div class="bg-[#E1D4C8] rounded-lg shadow-lg p-6 w-full max-w-md relative">
+      
+      <!-- Close Button -->
+      <button id="closeFormBtn" class="absolute top-3 right-3 text-[#684837] hover:text-[#402021] text-2xl">&times;</button>
+      
+      <h2 class="text-2xl font-bold mb-4 text-center text-[#402021]">Quick Contact</h2>
+
+      <!-- Form -->
+      <form action="https://formspree.io/f/xandadye" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Name" required class="w-full border rounded p-3 bg-white text-[#402021]">
+        <input type="number" name="age" placeholder="Age" required class="w-full border rounded p-3 bg-white text-[#402021]">
+        <select name="gender" required class="w-full border rounded p-3 bg-white text-[#402021]">
+          <option value="">-- Gender --</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+        <input type="email" name="email" placeholder="Email" required class="w-full border rounded p-3 bg-white text-[#402021]">
+        <input type="tel" name="phone" placeholder="Phone" required class="w-full border rounded p-3 bg-white text-[#402021]">
+
+        <!-- Redirect to thank you page -->
+        <input type="hidden" name="_next" value="thankyou.html">
+
+        <button type="submit" class="w-full py-3 bg-[#684837] text-white font-semibold rounded hover:bg-[#402021]">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Self Assessment -->
+  <section class="py-16 text-center bg-[#DCC7B6] px-4">
+    <h2 class="text-2xl md:text-3xl font-bold text-[#402021]">
+      Is Your Lifestyle Throwing You Off Balance?
+    </h2>
+    <p class="mt-4 text-[#402021]">Take a moment. Are any of these true for you?</p>
+
+    <div class="mt-8 max-w-3xl mx-auto">
+      <ul class="space-y-3 md:columns-2 md:gap-8 text-center md:text-left">
+        <li>✔ I feel mentally drained by mid day</li>
+        <li>✔ I can’t focus like I used to</li>
+        <li>✔ I wake up tired, even after a full night’s sleep</li>
+        <li>✔ My neck, shoulders, or back always feel stiff</li>
+        <li>✔ I never really “switch off,” even when I rest</li>
+      </ul>
+    </div>
+
+    <p class="mt-6 font-semibold max-w-xl mx-auto text-[#402021]">
+      If you said “yes” to even one… <br>
+      Your body is asking for balance, and yoga might be the easiest way to give it what it needs.
+    </p>
+  </section>
+
+  <!-- Why Yoga Section -->
+  <section class="py-16 bg-[#E1D4C8]">
+    <h2 class="text-2xl md:text-3xl font-bold text-center text-[#402021]">Why Yoga? Why Now?</h2>
+    <div class="mt-10 max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+      <div class="bg-[#D3B59D] rounded-lg p-6 shadow text-center">
+        <img src="images/modernlife.jpg" class="rounded-md shadow w-full h-48 object-cover">
+        <h3 class="mt-4 font-semibold text-[#402021]">Reality of Modern Life</h3>
+        <p class="mt-2 text-sm text-[#402021]">Modern life is nonstop. Work, screens, and noise keep your nervous system on edge.</p>
+      </div>
+      <div class="bg-[#D3B59D] rounded-lg p-6 shadow text-center">
+        <img src="images/burnout.jpg" class="rounded-md shadow w-full h-48 object-cover">
+        <h3 class="mt-4 font-semibold text-[#402021]">Burnout is Not a Badge of Honor</h3>
+        <p class="mt-2 text-sm text-[#402021]">Exhaustion isn’t strength – it’s a warning that your body needs care.</p>
+      </div>
+      <div class="bg-[#D3B59D] rounded-lg p-6 shadow text-center">
+        <img src="images/mindandbody.jpg" class="rounded-md shadow w-full h-48 object-cover">
+        <h3 class="mt-4 font-semibold text-[#402021]">Yoga as a Reset for Mind and Body</h3>
+        <p class="mt-2 text-sm text-[#402021]">Yoga quiets the mind and restores balance. Even short practices help you feel safe, strong, and supported.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation Section -->
+  <section class="relative py-20 bg-[#684837] text-white text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold">What you’ll get in your consultation</h2>
+      <p class="mt-2">A 1-on-1 session (15-20 min) where we will:</p>
+      <div class="mt-8 grid md:grid-cols-2 gap-6 text-left">
+        <ul class="space-y-3">
+          <li>✔ Identify what’s draining your energy</li>
+          <li>✔ Understand your body’s current state</li>
+          <li>✔ Create a personalized yoga routine</li>
+        </ul>
+        <ul class="space-y-3">
+          <li>✔ Include breathwork and stress-reset tools</li>
+          <li>✔ Movement without pressure or guilt</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-[#DCC7B6]">
+    <h2 class="text-2xl md:text-3xl font-bold text-center text-[#402021]">What others are saying?</h2>
+    <div class="mt-10 max-w-4xl mx-auto grid md:grid-cols-2 gap-8 px-6">
+      <div class="p-6 bg-white rounded-lg shadow">
+        <p class="italic text-[#402021]">“I thought I needed to quit my job to feel better. Turns out, I just needed 15 minutes of yoga. I feel clearer, lighter, and more in control.”</p>
+        <p class="mt-4 font-semibold text-[#402021]">— Priya S.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow">
+        <p class="italic text-[#402021]">“I used to roll my eyes at yoga. Now it’s my favorite 10 minutes of the day.”</p>
+        <p class="mt-4 font-semibold text-[#402021]">— Nitin M.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructor -->
+  <section class="py-16 bg-[#E1D4C8] text-center">
+    <img src="https://images.pexels.com/photos/4325465/pexels-photo-4325465.jpeg" class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg">
+    <h2 class="mt-6 text-2xl md:text-3xl font-bold text-[#402021]">Meet your Instructor</h2>
+    <p class="mt-4 max-w-2xl mx-auto text-[#402021]">
+      Hi, I’m [Your Name], certified yoga instructor and wellness coach. I help people who feel overwhelmed, stiff, and disconnected find balance again through accessible yoga designed for real life—not Instagram.
+    </p>
+  </section>
+
+  <!-- Booking Footer -->
+  <section class="relative py-16 bg-[#EE542F] text-center text-white">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold">Book your Free consultation Now</h2>
+      <p class="mt-4">Let’s build your custom wellness plan – no pressure, just clarity.</p>
+
+      <!-- CTA button -->
+      <button class="openFormBtn mt-6 inline-block px-8 py-4 bg-[#402021] text-white font-semibold rounded-md shadow hover:bg-[#251010]">
+        Book your Free Session
+      </button>
+
+      <p class="mt-3 text-sm">Only 5 free consultations are available per week. Reserve your spot before they fill.</p>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script>
+    const openBtns = document.querySelectorAll('.openFormBtn');
+    const closeBtn = document.getElementById('closeFormBtn');
+    const popup = document.getElementById('popupForm');
+
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', () => popup.classList.remove('hidden'));
+    });
+
+    closeBtn.addEventListener('click', () => popup.classList.add('hidden'));
+
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup) popup.classList.add('hidden');
+    });
+  </script>
+
+</body>
+</html>
